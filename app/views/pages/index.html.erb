@@ -1,7 +1,7 @@
 <h1>PRINT</h1>
 <hr/>
 
-<% @pages.each do |page| %>
+<% @pages.reverse.each do |page| %>
   <div><%= raw page.html %></div>
   <div><h2><%= page.header %></h2></div>
   <div><%= page.body %></div>
